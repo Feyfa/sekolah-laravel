@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .icon-hover:hover {
+        @apply bg-green-500
+    }
+    .icon-hover:hover i {
+        @apply text-white;
+    }
+    .icon-hover:hover p {
+        @apply block;
+    }
+    .icon-hover:hover ~ p {
+        @apply block;
+    }
+    
+    
+    
+    .icon-active {
+        @apply rounded-lg bg-green-500;
+    }
+    .icon-active i {
+        @apply text-white;
+    }
+}
+
+.is-valid label {
+    @apply text-blue-500;
+}
+.is-valid input {
+    @apply border border-blue-500;
+}
+.is-valid select {
+    @apply border border-blue-500;
+}
+.is-valid textarea {
+    @apply border border-blue-500;
+}
+
+.is-invalid label {
+    @apply text-red-500;
+}
+.is-invalid input {
+    @apply border border-red-500;
+}
+.is-invalid select {
+    @apply border border-red-500;
+}
+.is-invalid textare {
+    @apply border border-red-500;
+}
+
+.alert-success {
+    @apply bg-blue-500;
+}
+.alert-error {
+    @apply bg-red-500;
+}
